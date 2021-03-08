@@ -17,7 +17,9 @@
       <img src="./logo.png" alt="logo" id="header-img" />
 
       <nav id="nav-bar">
-        <button class="nav-link">Product</button>
+        <a href="#how-it-works">
+          <button class="nav-link">How It Works</button>
+        </a>
         <button class="nav-link">Features</button>
         <button class="nav-link">Pricing</button>
       </nav>
@@ -28,20 +30,79 @@
       <h2 id="subtitle">Get the restaurant to your home</h2>
       <section class="form-section">
         <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input type="email" id="email" placeholder="example@email.com" required />
-          <input type="submit" id="submit" value="Submit" />
+          <input
+            type="email"
+            id="email"
+            placeholder="example@email.com"
+            required
+          />
+          <input type="submit" id="submit" value="Get news" />
         </form>
       </section>
       <section id="video-section">
-        <video id="video" controls width="50%" autoplay loop>
-          <source
-            src="bbq.mp4"
-            type="video/mp4"
-          />
-
+        <video id="video" controls width="40%" autoplay loop>
+          <source src="./assets/video/bbq.mp4" type="video/mp4" />
           Sorry, your browser doesn't support embedded videos.
         </video>
       </section>
+
+      <section id="how-it-works">
+        <h3>How it works</h3>
+        <section class="step">
+          <img
+            class="icon"
+            src="./assets/icons/Tilda_Icons_5ev_calendar.svg"
+            alt="Calendar"
+          />
+          <p>Reserve a day and time.</p>
+        </section>
+        <section class="step">
+          <img
+            class="icon"
+            src="./assets/icons/Tilda_Icons_44_travel_bus.svg"
+            alt="Van"
+          />
+          <p>A van is coming your way.</p>
+        </section>
+        <section class="step">
+          <img
+            class="icon"
+            src="./assets/icons/Tilda_Icons_42_restaurant_furniture.svg"
+            alt="Restaurant table"
+          />
+          <p>Get inside, and dine like in a restaurant.</p>
+        </section>
+      </section>
+      <section id="features">
+        <h3>Features</h3>
+        <section class="feature">
+          <img
+            class="icon"
+            src="./assets/icons/Tilda_Icons_42_restaurant_waiter.svg"
+            alt="Calendar"
+          />
+          <p>Only high quality ingredients are used.</p>
+        </section>
+        <section class="feature">
+          <img
+            class="icon"
+            src="./assets/icons/Tilda_Icons_42_restaurant_cook.svg"
+            alt="Van"
+          />
+          <p>A chef is cooking for you.</p>
+        </section>
+        <section class="feature">
+          <img
+            class="icon"
+            src="./assets/icons/Tilda_Icons_5ev_magic.svg"
+            alt="Restaurant table"
+          />
+          <p>Using a special theme. You will forget you're in a van.</p>
+        </section>
+      </section>
+      <footer id="footer">
+        <p>&copy; Made by Wdthor - A fCC project</p>
+      </footer>
     </main>
   </body>
 </html>
