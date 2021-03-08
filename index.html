@@ -17,11 +17,15 @@
       <img src="./logo.png" alt="logo" id="header-img" />
 
       <nav id="nav-bar">
-        <a href="#how-it-works">
-          <button class="nav-link">How It Works</button>
+        <a class="nav-link" href="#how-it-works">
+          <button class="nav-link-button">How It Works</button>
         </a>
-        <button class="nav-link">Features</button>
-        <button class="nav-link">Pricing</button>
+        <a class="nav-link" href="#features">
+          <button class="nav-link-button">Features</button>
+        </a>
+        <a class="nav-link" href="#pricing">
+          <button class="nav-link-button">Pricing</button>
+        </a>
       </nav>
     </header>
 
@@ -31,6 +35,7 @@
       <section class="form-section">
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input
+            name="email"
             type="email"
             id="email"
             placeholder="example@email.com"
@@ -79,7 +84,7 @@
           <img
             class="icon"
             src="./assets/icons/Tilda_Icons_42_restaurant_waiter.svg"
-            alt="Calendar"
+            alt="Quality ingredients"
           />
           <p>Only high quality ingredients are used.</p>
         </section>
@@ -87,7 +92,7 @@
           <img
             class="icon"
             src="./assets/icons/Tilda_Icons_42_restaurant_cook.svg"
-            alt="Van"
+            alt="A Cook"
           />
           <p>A chef is cooking for you.</p>
         </section>
@@ -95,9 +100,26 @@
           <img
             class="icon"
             src="./assets/icons/Tilda_Icons_5ev_magic.svg"
-            alt="Restaurant table"
+            alt="Magic"
           />
           <p>Using a special theme. You will forget you're in a van.</p>
+        </section>
+      </section>
+      <section id="pricing">
+        <h3>Pricing</h3>
+        <section id="package-container">
+          <section class="package">
+            <p class="package-header">Basic Package</p>
+            <p class="package-content">$99</p>
+          </section>
+          <section class="package">
+            <p class="package-header">Premium Package</p>
+            <p class="package-content">$189</p>
+          </section>
+          <section class="package">
+            <p class="package-header">Deluxe Package</p>
+            <p class="package-content">$277</p>
+          </section>
         </section>
       </section>
       <footer id="footer">

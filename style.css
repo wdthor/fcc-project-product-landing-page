@@ -13,17 +13,17 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   height: 100vh;
   width: 100%;
   background-color: #ffda75;
-  scroll-behavior: smooth;
 }
 
 #header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 3rem;
   background-color: #eee;
@@ -37,7 +37,7 @@ body {
   text-decoration: none;
 }
 
-.nav-link {
+.nav-link-button {
   cursor: pointer;
   height: 100%;
   border: none;
@@ -74,7 +74,6 @@ body {
   border: none;
   color: var(--primary-color);
   font-size: 1rem;
-
 }
 
 #email {
@@ -119,7 +118,8 @@ body {
   box-shadow: 2px 2px 2px rgba(255, 199, 45, 0.6);
 }
 
-#how-it-works, #features {
+#how-it-works,
+#features {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,16 +127,58 @@ body {
   margin-bottom: 2rem;
 }
 
-.step, .feature {
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+#package-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.package {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin: 0 2rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+.package-header {
+  text-align: center;
+  width: 100%;
+  background-color: #ffc72d;
+  padding: 1rem 0;
+  margin-top: 0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.package-content {
+  padding: 1rem;
+  margin-top: 0;
+}
+
+.step,
+.feature {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.step > p, .feature > p {
+.step > p,
+.feature > p {
   width: 17rem;
   font-size: 1.2rem;
-  
 }
 
 .icon {
@@ -159,5 +201,4 @@ body {
 }
 
 @media screen and (max-width: 60rem) {
-
 }
