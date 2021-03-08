@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -45,7 +44,7 @@
         </form>
       </section>
       <section id="video-section">
-        <video id="video" controls width="40%" autoplay loop>
+        <video id="video" controls autoplay loop>
           <source src="./assets/video/bbq.mp4" type="video/mp4" />
           Sorry, your browser doesn't support embedded videos.
         </video>
@@ -110,21 +109,50 @@
         <section id="package-container">
           <section class="package">
             <p class="package-header">Basic Package</p>
-            <p class="package-content">$99</p>
+            <div class="package-content">
+              <p class="package-price">$99</p>
+              <ul>
+                <li>Basic Theme of your choice</li>
+              </ul>
+            </div>
           </section>
           <section class="package">
             <p class="package-header">Premium Package</p>
-            <p class="package-content">$189</p>
+            <div class="package-content">
+              <p class="package-price">$189 <strong>Best Seller</strong></p>
+              <ul>
+                <li>Premium Theme of your choice</li>
+                <li>Concert</li>
+                <li>Member card to get future discount</li>
+              </ul>
+            </div>
           </section>
           <section class="package">
             <p class="package-header">Deluxe Package</p>
-            <p class="package-content">$277</p>
+            <div class="package-content">
+              <p class="package-price">$277</p>
+              <ul>
+                <li>Deluxe Theme of your choice</li>
+                <li>Special concert</li>
+                <li>
+                  Deluxe Member card collection to get future special discount
+                </li>
+                <li>Private lesson with the chef</li>
+                <li>Special present</li>
+              </ul>
+            </div>
           </section>
         </section>
       </section>
-      <footer id="footer">
-        <p>&copy; Made by Wdthor - A fCC project</p>
-      </footer>
     </main>
+    <footer id="footer">
+      <p>&copy; Made by Wdthor - A fCC project</p>
+      <p>- Icons are from <a href="https://tilda.cc">Tilda Publishing</a></p>
+      <p>
+        - Video is from
+        <a href="https://pixabay.com/videos/id-11632/">Pixabay</a>
+      </p>
+      <p>- Logo and code is from... <b>ME</b> of course</p>
+    </footer>
   </body>
 </html>
